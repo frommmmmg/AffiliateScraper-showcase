@@ -6,6 +6,8 @@
 
 🌐 Feeds **[affproof.com](https://affproof.com)** · [GitHub @frommmmmg](https://github.com/frommmmmg)
 
+✍️ 作者 **姜芊泽** · 微信公众号: **Pin海引航**
+
 </div>
 
 > **本仓库仅用于展示，不公开源码。** AffiliateScraper 不开源，所以这里没有代码，只介绍它做什么、怎么构建、长什么样。想聊聊它，请通过我的 [GitHub 主页](https://github.com/frommmmmg)联系我。
@@ -55,6 +57,18 @@
 - **每个条目都有人工核对。** 人工流程分三步：确认是真实的独立注册页，按佣金条款定级，再试注册看是否即时通过。
 - **输出能被其他工具读取。** 同一张表写出 CSV（给表格）、JSON（给前端）和 Markdown（给笔记）。
 - **为服务更大的东西而建。** 它是 AffProof 流水线的发现阶段，后面的阶段负责收集证据、撰写档案、过门禁、导入和翻译。
+
+<!--author-->
+## 关于作者
+
+<img src="assets/wechat-qr.png" alt="微信公众号 Pin海引航 的二维码" width="200" align="right">
+
+**姜芊泽** 是我的笔名。我是一名独立开发者，致力于为出海品牌、商家和创作者提供工具、数据和自动化方案。这些展示里的每个项目，从产品想法到服务器和文档，都是我一个人设计、构建并运营的。
+
+我在微信公众号 **Pin海引航** 上写这方面的内容。扫码关注，或者到 [GitHub](https://github.com/frommmmmg) 找我。
+
+<br clear="right">
+<!--/author-->
 
 **其他项目展示:** [AffProof](https://github.com/frommmmmg/AffProof-showcase) · [Tonu.app](https://github.com/frommmmmg/Tonu.app-showcase) · [AutoPin-CS](https://github.com/frommmmmg/AutoPin-CS-showcase)
 

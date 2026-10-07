@@ -6,6 +6,8 @@ English · [中文](README.zh.md) · [Español](README.es.md) · [Deutsch](READM
 
 🌐 Feeds **[affproof.com](https://affproof.com)** · [GitHub @frommmmmg](https://github.com/frommmmmg)
 
+✍️ By **姜芊泽 (Jiang Qianze)** · WeChat Official Account: **Pin海引航**
+
 </div>
 
 > **This repository is a showcase, not a source release.** AffiliateScraper is closed-source, so there is no code here, only what it does, how it is built and what it looks like. To talk about it, get in touch through my [GitHub profile](https://github.com/frommmmmg).
@@ -55,6 +57,18 @@ The best-paying programs are rarely in a marketplace. They sit on a company's ow
 - **A human check on every entry.** The manual routine is three steps: confirm it is a real independent sign-up page, grade it by commission terms, and test the sign-up to see whether approval is instant.
 - **Output that other tools can read.** CSV for spreadsheets, JSON for front ends and Markdown for notes, written from the same table.
 - **Built to feed something bigger.** It is the discovery stage of the AffProof pipeline, whose later stages collect evidence, write the dossier, gate it, import it and translate it.
+
+<!--author-->
+## About the author
+
+<img src="assets/wechat-qr.png" alt="QR code of the WeChat Official Account Pin海引航" width="200" align="right">
+
+**姜芊泽 (Jiang Qianze)** is a pen name. I am an independent developer who builds tools, data and automation for brands, merchants and creators going global. Every project in these showcases was designed, built and run end to end by me alone, from the product idea to the servers and the documentation.
+
+I write about this work on my WeChat Official Account, **Pin海引航** (in Chinese). Scan the code to follow it, or find me on [GitHub](https://github.com/frommmmmg).
+
+<br clear="right">
+<!--/author-->
 
 **Other showcases:** [AffProof](https://github.com/frommmmmg/AffProof-showcase) · [Tonu.app](https://github.com/frommmmmg/Tonu.app-showcase) · [AutoPin-CS](https://github.com/frommmmmg/AutoPin-CS-showcase)
 

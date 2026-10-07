@@ -6,6 +6,8 @@
 
 🌐 Feeds **[affproof.com](https://affproof.com)** · [GitHub @frommmmmg](https://github.com/frommmmmg)
 
+✍️ Von **姜芊泽 (Jiang Qianze)** · WeChat-Offizialkonto: **Pin海引航**
+
 </div>
 
 > **Dieses Repository ist ein Schaufenster, keine Quellcode-Veröffentlichung.** AffiliateScraper ist nicht quelloffen, deshalb gibt es hier keinen Code, nur was es kann, wie es gebaut ist und wie es aussieht. Wenn du darüber sprechen möchtest, melde dich über mein [GitHub-Profil](https://github.com/frommmmmg).
@@ -55,6 +57,18 @@ Die bestzahlenden Programme sind selten in einem Marktplatz. Sie liegen auf der 
 - **Eine menschliche Prüfung für jeden Eintrag.** Die manuelle Routine hat drei Schritte: bestätigen, dass es eine echte unabhängige Anmeldeseite ist, sie nach den Provisionsbedingungen bewerten und die Anmeldung testen, ob die Freigabe sofort erfolgt.
 - **Ausgabe, die andere Werkzeuge lesen können.** CSV für Tabellen, JSON für Frontends und Markdown für Notizen, geschrieben aus derselben Tabelle.
 - **Gebaut, um etwas Größeres zu speisen.** Es ist die Entdeckungsstufe der AffProof-Pipeline, deren spätere Stufen Belege sammeln, das Prüfprofil schreiben, es prüfen, importieren und übersetzen.
+
+<!--author-->
+## Über den Autor
+
+<img src="assets/wechat-qr.png" alt="QR-Code des WeChat-Offizialkontos Pin海引航" width="200" align="right">
+
+**姜芊泽 (Jiang Qianze)** ist ein Pseudonym. Ich bin unabhängiger Entwickler und baue Werkzeuge, Daten und Automatisierung für Marken, Händler und Creator, die ins Ausland expandieren. Jedes Projekt in diesen Vorstellungen habe ich allein entworfen, gebaut und betrieben, von der Produktidee bis zu Servern und Dokumentation.
+
+Über diese Arbeit schreibe ich in meinem WeChat-Offizialkonto **Pin海引航** (auf Chinesisch). Scanne den Code, um ihm zu folgen, oder finde mich auf [GitHub](https://github.com/frommmmmg).
+
+<br clear="right">
+<!--/author-->
 
 **Weitere Projekte:** [AffProof](https://github.com/frommmmmg/AffProof-showcase) · [Tonu.app](https://github.com/frommmmmg/Tonu.app-showcase) · [AutoPin-CS](https://github.com/frommmmmg/AutoPin-CS-showcase)
 
