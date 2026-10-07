@@ -4,23 +4,38 @@
 
 [English](README.md) · [中文](README.zh.md) · [Español](README.es.md) · Deutsch · [Français](README.fr.md)
 
+🌐 Feeds **[affproof.com](https://affproof.com)** · [GitHub @frommmmmg](https://github.com/frommmmmg)
+
 </div>
 
-> **Dieses Repository ist ein Schaufenster, keine Quellcode-Veröffentlichung.** AffiliateScraper ist ein privates Projekt, deshalb gibt es hier keinen Code, nur was es kann, wie es gebaut ist und wie es aussieht. Wenn du darüber sprechen möchtest, melde dich über mein [GitHub-Profil](https://github.com/frommmmmg).
+> **Dieses Repository ist ein Schaufenster, keine Quellcode-Veröffentlichung.** AffiliateScraper ist nicht quelloffen, deshalb gibt es hier keinen Code, nur was es kann, wie es gebaut ist und wie es aussieht. Wenn du darüber sprechen möchtest, melde dich über mein [GitHub-Profil](https://github.com/frommmmmg).
 
-**Ein Radar für lohnende Partnerprogramme.** Es zielt auf die Programme mit wiederkehrender Provision, die unabhängige SaaS- und KI-Unternehmen auf Plattformen wie Tolt, Rewardful, PromoteKit, FirstPromoter und PartnerStack betreiben, statt auf die großen geschlossenen Marktplätze.
+**Ein Radar für lohnende Partnerprogramme.** Es findet die Self-Service-Programme, die unabhängige SaaS- und KI-Unternehmen auf Plattformen wie Tolt, Rewardful, PromoteKit, FirstPromoter und PartnerStack betreiben, statt der großen geschlossenen Marktplätze.
 
-**Highlights**
+Die bestzahlenden Programme sind selten in einem Marktplatz. Sie liegen auf der eigenen Anmeldeseite des Unternehmens, und jede Hosting-Plattform hinterlässt in URLs und Formulierungen einen erkennbaren Fußabdruck. AffiliateScraper macht aus diesen Fußabdrücken Suchregeln und erledigt dann den langweiligen Teil: Es liest, was es findet, extrahiert die Provisionsbedingungen, bewertet jedes Programm und speichert alles so, dass ein Mensch es filtern, exportieren und prüfen kann.
 
-- **Entdeckung per Dorks.** Eine gepflegte Regelbibliothek samt Ausschlusslisten, ausgeführt über DuckDuckGo, Google CSE oder Serper.
-- **Strukturierte Auswertung.** Markenname, Provisionssatz, wiederkehrend oder einmalig und Kategorie werden mit Pydantic-Modellen extrahiert und validiert.
-- **Saubere Speicherung und Export.** SQLite mit Deduplizierung und Unique-Constraints, Export nach CSV, JSON und Markdown.
-- **Eine KI-Keyword-Ebene.** Macht aus der Produktliste die Seiten, die zu schreiben sich lohnt, mit Suchintention-Stufen und ohne kostenpflichtige SEO-Tools.
-- **Einzeilige CLI** zum Laden, Auflisten, Suchen, Exportieren und Erzeugen von Keywords.
+| | |
+|---|---|
+| **Meine Rolle** | Von einer Person entworfen und gebaut, als Entdeckungsstufe der AffProof-Datenpipeline |
+| **Status** | Im täglichen Einsatz |
+| **Ausgabe** | CSV-, JSON- und Markdown-Exporte sowie eine Keyword-Ebene, um zu entscheiden, was man schreibt |
+| **Technik** | Python · SQLite · Pydantic · Such-APIs (DuckDuckGo, Google CSE, Serper) |
 
-Sie speist außerdem die Prüf-Pipeline von AffProof.
+### Was es kann
 
-**Technik:** Python · SQLite · Pydantic · Such-APIs
+**Entdeckung**
+- **Suche per Dorks.** Eine gepflegte Bibliothek von Suchregeln, eine Familie pro Hosting-Plattform, mit Ausschlusslisten, die Blogs und Bewertungsseiten fernhalten. Die Suchen laufen über DuckDuckGo, Google CSE oder Serper, die Proxy-Einstellungen sind konfigurierbar.
+- **Auf die richtigen Programme gezielt.** Gesucht werden wiederkehrende Provisionen von 30 % bis 50 %, sofortige Freischaltung und ein öffentlicher Anmeldelink, keine Einmalzahlungen.
+
+**Verstehen**
+- **Strukturierte Auswertung.** Markenname, Provisionssatz, wiederkehrend oder einmalig, Cookie-Dauer, Auszahlungsschwelle, Freigabeart und Kategorie werden mit Pydantic-Modellen extrahiert und validiert.
+- **Eine einfache Note.** Stufen S, A und B, wobei S eine wiederkehrende Provision von mindestens 30 % mit starkem Konversionspotenzial bedeutet.
+
+**Speicherung und Ausgabe**
+- **Saubere Speicherung und Export.** SQLite mit Deduplizierung und Unique-Constraints auf der Anmelde-URL, Export nach CSV, JSON und Markdown, damit dieselben Daten in einer Tabelle, einem Frontend oder einer Notiz geöffnet werden können.
+
+**Eine Keyword-Ebene**
+- **Von „wer zahlt mir“ zu „was schreibe ich“.** Die KI beurteilt die Suchabsicht ohne kostenpflichtige SEO-Tools und sortiert Keywords in vier Stufen, von Menschen kurz vor dem Kauf bis zu bloß Neugierigen. Felder für Volumen, Wettbewerb und Gebot sind für echte Keyword-Planner-Daten reserviert, denn das Gebot eines Werbetreibenden beweist, dass die Nachfrage real ist.
 
 ## Screenshots
 
@@ -31,6 +46,17 @@ Sie speist außerdem die Prüf-Pipeline von AffProof.
 
 ![Von der Suchanfrage zur sortierten, deduplizierten Programmliste.](assets/affiliatescraper-pipeline.svg)
 *Von der Suchanfrage zur sortierten, deduplizierten Programmliste.*
+
+<!--notes-->
+## Technische Notizen
+
+- **Bewusst schlichte Technik.** Python, SQLite und Pydantic, ohne kostenpflichtiges SEO-Werkzeug im Ablauf, es läuft also auf einem Laptop, und die Daten liegen in einer Datei.
+- **Ein Schritt nach dem anderen.** Jeder Befehl erledigt eine Aufgabe und hält an. Nichts reiht sich von selbst in den nächsten Schritt ein, so bleibt ein Mensch Herr darüber, was in die Datenbank gelangt.
+- **Eine menschliche Prüfung für jeden Eintrag.** Die manuelle Routine hat drei Schritte: bestätigen, dass es eine echte unabhängige Anmeldeseite ist, sie nach den Provisionsbedingungen bewerten und die Anmeldung testen, ob die Freigabe sofort erfolgt.
+- **Ausgabe, die andere Werkzeuge lesen können.** CSV für Tabellen, JSON für Frontends und Markdown für Notizen, geschrieben aus derselben Tabelle.
+- **Gebaut, um etwas Größeres zu speisen.** Es ist die Entdeckungsstufe der AffProof-Pipeline, deren spätere Stufen Belege sammeln, das Prüfprofil schreiben, es prüfen, importieren und übersetzen.
+
+**Weitere Projekte:** [AffProof](https://github.com/frommmmmg/AffProof-showcase) · [Tonu.app](https://github.com/frommmmmg/Tonu.app-showcase) · [AutoPin-CS](https://github.com/frommmmmg/AutoPin-CS-showcase)
 
 ---
 
